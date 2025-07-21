@@ -11,7 +11,7 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: white;
-    background-image: url(:img/Voyagez.jpg);
+    background-image: url(../img/Voyagez.jpg);
     background-repeat: no-repeat;
     background-position-x: 50%;
     margin: 0;
