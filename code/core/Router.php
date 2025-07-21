@@ -12,7 +12,9 @@ class Router {
            $controller = $this->routes[$uri];
            $controller->handle();
         } else {
-            echo "Page not found!";
+           require_once 'code/views/header.php';
+        require_once 'code/views/home.php';
+        require_once 'code/views/footer.php'; 
         }
     }
 }
