@@ -20,5 +20,8 @@ $uri = $_SERVER['REQUEST_URI'];
 //$router->handleRequest($uri);
 
 echo ($uri);
+  require_once 'code/views/header.php';
+        require_once 'code/views/home.php';
+        require_once 'code/views/footer.php';
 
 
