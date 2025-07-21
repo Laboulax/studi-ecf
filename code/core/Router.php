@@ -8,7 +8,7 @@ class Router {
     }
 
     public function handleRequest($uri) {
-        echo ($uri);
+        
         if (array_key_exists($uri, $this->routes)) {
            $controller = $this->routes[$uri];
            $controller->handle();
