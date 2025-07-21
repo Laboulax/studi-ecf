@@ -17,11 +17,7 @@ $router->addRoute('/ECF_mvc/index.php?profile', new ProfileController());
 
 // Gérer la requête
 $uri = $_SERVER['REQUEST_URI'];
-//$router->handleRequest($uri);
+$router->handleRequest($uri);
 
-echo ($uri);
-  require_once 'code/views/header.php';
-        require_once 'code/views/home.php';
-        require_once 'code/views/footer.php';
 
 
