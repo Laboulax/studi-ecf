@@ -1,4 +1,5 @@
 <?php
+/*
 require_once 'code/core/Router.php';
 require_once 'code/controllers/HomeController.php';
 require_once 'code/controllers/AuthController.php';
@@ -16,4 +17,6 @@ $router->addRoute('/ECF_mvc/index.php?profile', new ProfileController());
 
 // Gérer la requête
 $uri = $_SERVER['REQUEST_URI'];
-$router->handleRequest($uri);
+$router->handleRequest($uri);*/
+
+echo ("mange mes couilles !!!!!!!!!!!!!!!!!!! sale fdp");
