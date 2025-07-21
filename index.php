@@ -10,7 +10,7 @@ $router = new Router();
 
 // Définir les routes
 $router->addRoute('?home', new HomeController());
-$router->addRoute('/ECF_mvc/index.php?login', new AuthController('login'));
+$router->addRoute('?ECF_mvc/index.php?login', new AuthController('login'));
 $router->addRoute('/ECF_mvc/index.php?register', new AuthController('register'));
 $router->addRoute('/ECF_mvc/index.php?search', new SearchController());
 $router->addRoute('/ECF_mvc/index.php?profile', new ProfileController());
