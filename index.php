@@ -9,11 +9,11 @@ require_once 'code/controllers/ProfileController.php';
 $router = new Router();
 
 // Définir les routes
-$router->addRoute('?home', new HomeController());
-$router->addRoute('?ECF_mvc/index.php?login', new AuthController('login'));
-$router->addRoute('/ECF_mvc/index.php?register', new AuthController('register'));
-$router->addRoute('/ECF_mvc/index.php?search', new SearchController());
-$router->addRoute('/ECF_mvc/index.php?profile', new ProfileController());
+$router->addRoute('/', new HomeController());
+$router->addRoute('/?login', new AuthController('login'));
+$router->addRoute('/?register', new AuthController('register'));
+$router->addRoute('/?search', new SearchController());
+$router->addRoute('/?profile', new ProfileController());
 
 // Gérer la requête
 $uri = $_SERVER['REQUEST_URI'];
