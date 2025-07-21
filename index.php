@@ -1,4 +1,4 @@
-<?php
+ites<?php
 /*
 require_once 'code/core/Router.php';
 require_once 'code/controllers/HomeController.php';
@@ -19,4 +19,4 @@ $router->addRoute('/ECF_mvc/index.php?profile', new ProfileController());
 $uri = $_SERVER['REQUEST_URI'];
 $router->handleRequest($uri);*/
 
-echo ("mange mes couilles !!!!!!!!!!!!!!!!!!! sale fdp");
+echo ("mange mes petites couilles de raisins secs !!!!!!!!!!!!!!!!!!! sale fdp");
