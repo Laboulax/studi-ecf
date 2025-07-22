@@ -50,12 +50,21 @@
 
             <?php
 
-            $servername = "localhost";
-            $username = "root";
-            $password = "";
+// Todo -> Mettre en mode MVC
+
+require_once 'code/config/config.php';
+
+
+     $db_name = DB_NAME;
+    
+
+            $servername = DB_HOST;
+            $username = DB_USER;
+            $password = DB_PASS;
+
 
             try {
-                $bdd = new PDO("mysql:host=$servername;dbname=ecoride", $username, $password);
+                $bdd = new PDO("mysql:host=$servername;dbname= $db_name", $username, $password);
                 $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             } catch (PDOException $e) {
                 echo "Erreur : " . $e->getMessage();
