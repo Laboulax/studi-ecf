@@ -10,10 +10,10 @@ $router = new Router();
 
 // Définir les routes
 $router->addRoute('/', new HomeController());
-$router->addRoute('/?login', new AuthController('login'));
-$router->addRoute('/?register', new AuthController('register'));
-$router->addRoute('/?search', new SearchController());
-$router->addRoute('/?profile', new ProfileController());
+$router->addRoute('/index.php?login', new AuthController('login'));
+$router->addRoute('/index.php?register', new AuthController('register'));
+$router->addRoute('/index.php?search', new SearchController());
+$router->addRoute('/index.php?profile', new ProfileController());
 
 // Gérer la requête
 $uri = $_SERVER['REQUEST_URI'];
